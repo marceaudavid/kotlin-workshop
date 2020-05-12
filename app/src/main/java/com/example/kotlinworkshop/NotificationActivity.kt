@@ -38,15 +38,15 @@ class NotificationActivity : AppCompatActivity() {
             PendingIntent.FLAG_CANCEL_CURRENT
         )
 
-        var builder = NotificationCompat.Builder(this, "1")
-            .setSmallIcon(R.drawable.notification_icon)
-            .setContentTitle("Notification")
-            .setContentText("Open Activity")
-            .setPriority(NotificationCompat.PRIORITY_DEFAULT)
-            .setContentIntent(pendingIntent)
-            .setAutoCancel(true)
-
         button.setOnClickListener(View.OnClickListener {
+            var builder = NotificationCompat.Builder(this, "1")
+                .setSmallIcon(R.drawable.notification_icon)
+                .setContentTitle("Notification")
+                .setContentText("Open Activity")
+                .setPriority(NotificationCompat.PRIORITY_DEFAULT)
+                .setContentIntent(pendingIntent)
+                .setAutoCancel(true)
+
             with(NotificationManagerCompat.from(this)) {
                 notify(1, builder.build())
             }
