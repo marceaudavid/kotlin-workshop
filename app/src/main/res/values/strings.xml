@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Kotlin Workshop</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu dui vivamus arcu felis. Tincidunt vitae semper quis lectus nulla at volutpat diam ut. Libero justo laoreet sit amet cursus sit amet. Aenean pharetra magna ac placerat vestibulum. Pharetra et ultrices neque ornare. Sem integer vitae justo eget magna fermentum iaculis eu. Euismod lacinia at quis risus sed. Morbi tincidunt augue interdum velit euismod in pellentesque massa. Nibh sit amet commodo nulla facilisi nullam vehicula ipsum. Sagittis nisl rhoncus mattis rhoncus urna neque. Fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate sapien. Eget egestas purus viverra accumsan in nisl nisi scelerisque eu. Eget nunc lobortis mattis aliquam faucibus purus in.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="channel_description">A notification channel</string>
+    <string name="channel_name">Notification channel</string>
 </resources>

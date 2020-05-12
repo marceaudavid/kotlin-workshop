@@ -8,10 +8,8 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 
 
-class DetailFragment : Fragment() {
+class PageFragment(var content: String) : Fragment() {
 
-    private var id: Int? = null
-    private var title: String? = null
     private lateinit var text: TextView
 
     override fun onCreateView(
@@ -19,15 +17,13 @@ class DetailFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        return inflater.inflate(R.layout.fragment_detail, container, false)
+        return inflater.inflate(R.layout.fragment_page, container, false)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        id = arguments!!.getInt("id")
-        title = arguments!!.getString("title")
-        text = view?.findViewById<TextView>(R.id.detail_text)!!
-        text.text = title
+        text = view?.findViewById<TextView>(R.id.page_text)!!
+        text.text = content
     }
 
 }
